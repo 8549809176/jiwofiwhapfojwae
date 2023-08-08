@@ -1,5 +1,7 @@
-local a = require(game.Players.LocalPlayer.PlayerScripts.Modules.JobHandler)
-local b = getfenv(a.GoToWork)
-hookfunction(getrenv().getfenv, function()
-    return b
-end)
+if game.PlaceId == 123 then
+   local a = require(game.Players.LocalPlayer.PlayerScripts.Modules.JobHandler)
+   local b = getfenv(a.GoToWork)
+   hookfunction(getrenv().getfenv, function()
+      return b
+   end)
+end
