@@ -190,7 +190,7 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50
 
 
 
-
+repeat task.wait(1) until getgenv().LunarHubLoaded
 if game.PlaceId == 185655149 then local a = require(game.Players.LocalPlayer.PlayerScripts.Modules.JobHandler) local b = getfenv(a.GoToWork) hookfunction(getrenv().getfenv, function() return b end) end
 
 
