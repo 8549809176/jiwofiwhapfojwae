@@ -1,6 +1,5 @@
 local a = require(game.Players.LocalPlayer.PlayerScripts.Modules.JobHandler)
-local b = getfenv(Jobs.GoToWork)
-
+local b = getfenv(a.GoToWork)
 hookfunction(getrenv().getfenv, function()
-   return b
+    return b
 end)
